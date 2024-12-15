@@ -15,10 +15,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Post Container Styling */
+/* Post Container Styling - Square Dimensions (1080x1080) */
 .post-container {
-    width: 1080px;
-    height: 1080px;
+    width: 1080px;  /* Set width to 1080px */
+    height: 1080px;  /* Set height to 1080px */
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(34,193,195,1) 40%, rgba(253,187,45,1) 100%);
     border-radius: 20px;
     overflow: hidden;
@@ -42,10 +42,10 @@ body {
     color: #f2f2f2;
 }
 
-/* Main Text Styling (Dreamy Font) */
+/* Main Text Styling */
 .main-text {
-    font-family: 'Pacifico', cursive;
-    font-size: 70px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
     line-height: 1.2;
     letter-spacing: 1px;
     font-weight: bold;
@@ -66,7 +66,7 @@ body {
     text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
 }
 
-/* Call-to-Action Button Styling (Swapnaatle Hi Sawpna Style) */
+/* Call-to-Action Button Styling */
 .cta-button {
     background: linear-gradient(45deg, #4CAF50, #1c4e01); /* Greenish mystical gradient */
     color: white;
@@ -120,9 +120,9 @@ body {
     }
 }
 
-/* Brand Name Styling with Green Button */
+/* Brand Name Styling */
 .brand-name {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Great Vibes', cursive;
     font-size: 38px;
     margin-top: 40px;
     font-weight: bold;
