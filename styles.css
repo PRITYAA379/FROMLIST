@@ -1,161 +1,53 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
 body {
-    background-color: #111;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
-/* Post Container Styling - Square Dimensions (1080x1080) */
 .post-container {
-    width: 1080px;  /* Set width to 1080px */
-    height: 1080px;  /* Set height to 1080px */
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(34,193,195,1) 40%, rgba(253,187,45,1) 100%);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    color: white;
-    transform: rotate(-2deg);
+    color: #fff;
 }
 
-/* Text Overlay Centering */
 .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Main Text Styling */
-.main-text {
+.main-text h1 {
     font-family: 'Great Vibes', cursive;
-    font-size: 60px;
-    line-height: 1.2;
-    letter-spacing: 1px;
-    font-weight: bold;
-    text-shadow: 3px 3px 8px rgba(0,0,0,0.6);
-}
-
-/* Highlighted Percentage Styling */
-.highlight {
-    color: #fff500;
-}
-
-/* Sub-text Styling */
-.sub-text {
-    font-size: 32px;
-    margin-top: 20px;
-    color: #ffcc00;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-}
-
-/* Call-to-Action Button Styling */
-.cta-button {
-    background: linear-gradient(45deg, #4CAF50, #1c4e01); /* Greenish mystical gradient */
-    color: white;
-    border: none;
-    padding: 18px 40px;
-    border-radius: 50px;
-    margin-top: 40px;
-    font-size: 26px;
-    font-family: 'Great Vibes', cursive; /* Special font for the button */
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.5s ease;
+    font-size: 3rem;
+    color: #ff7b7b;
     text-transform: uppercase;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); /* Glowing effect */
-    position: relative;
-    overflow: hidden;
+    letter-spacing: 2px;
+    animation: glowing 1.5s infinite alternate;
 }
 
-.cta-button::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    animation: glowing 1.5s infinite;
-    transform: translate(-50%, -50%);
+.sub-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 15px;
 }
 
-.cta-button:hover {
-    background: linear-gradient(45deg, #1c4e01, #4CAF50);
-    box-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
-    transform: scale(1.1);
+.subtle-glow {
+    text-shadow: 0 0 10px rgba(255, 123, 123, 0.8), 0 0 20px rgba(255, 123, 123, 0.6), 0 0 30px rgba(255, 123, 123, 0.4);
 }
 
-/* Glowing Animation */
+/* Glowing animation */
 @keyframes glowing {
     0% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0.5;
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.5);
-        opacity: 0.8;
+        text-shadow: 0 0 5px #ff7b7b, 0 0 10px #ff7b7b, 0 0 15px #ff7b7b;
     }
     100% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0.5;
-    }
-}
-
-/* Brand Name Styling */
-.brand-name {
-    font-family: 'Great Vibes', cursive;
-    font-size: 38px;
-    margin-top: 40px;
-    font-weight: bold;
-    color: #ffffff;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-    background-color: #4CAF50;
-    padding: 15px 40px;
-    border-radius: 50px;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-/* Subtle Glow Effect */
-.subtle-glow {
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
-}
-
-/* Responsive Text Sizes */
-@media (max-width: 768px) {
-    .main-text {
-        font-size: 45px;
-    }
-    .sub-text {
-        font-size: 26px;
-    }
-    .cta-button {
-        font-size: 22px;
-        padding: 15px 30px;
-    }
-    .brand-name {
-        font-size: 28px;
-        padding: 12px 30px;
+        text-shadow: 0 0 20px #ff7b7b, 0 0 30px #ff7b7b, 0 0 40px #ff7b7b;
     }
 }
